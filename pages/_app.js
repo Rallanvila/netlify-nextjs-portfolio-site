@@ -1,7 +1,13 @@
-import '@styles/globals.css'
+import { createContext, useState } from "react";
+import "../styles/globals.css";
+import ModalOverlayProvider from "../context/ModalContext";
 
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+	return (
+		<ModalOverlayProvider>
+			<Component {...pageProps} />
+		</ModalOverlayProvider>
+	);
 }
 
-export default Application
+export default MyApp;
