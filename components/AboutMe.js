@@ -4,9 +4,9 @@ import Image from "next/Image";
 import { BsKeyboard } from "react-icons/bs";
 import { MdFamilyRestroom } from "react-icons/md";
 import { SiMaterialui } from "react-icons/si";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import AOS from "aos";
-import "pages/node_modules/aos/dist/aos.css";
+import "../node_modules/aos/dist/aos.css";
 
 const AboutMe = () => {
 	return (
